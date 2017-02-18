@@ -1,64 +1,250 @@
 ---
 layout: default
 ---
+<style>
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .fa {
+	font-size: 1.25em;
+}
+</style>
 <div class="container">
     <div class="group-article">
         <div class="row no-margin">
-            <div class="col s12">
-                <h2 class="orange-text center-align thin">Recent Post</h2>
-                <div class="divider"></div>
+            <div class="col s12 center-align">
+                <br /><br /><br />
+                <h2 class="black-text center-align">OpenNIC</h2>
+                <br />
+            		<h5>Looking for an alternative DNS provider that is open and democratic? Concerned about censorship?</h5>
+                <h5>OpenNIC might be the alternative DNS root for you!</h5>
+            		<br /><p>Want to switch? Click the blue button!</p>
+            		<a href="/get-started" class="waves-effect waves-light btn-large z-depth-0 blue">Find Out More!</a>
+            		<br /><br />
+                <p><a href="https://servers.opennicproject.org/" target="_blank">All Servers</a> &#124; Your closest servers:</p>
+                <div id="geoip"></div>
+                <script type="text/javascript">
+              		jQuery( document ).ready( function() {
+              			jQuery.ajax( {
+              				url: 'https://api.opennicproject.org/geoip/?jsonp&res=4&ip=&nearest',
+              				method: 'GET',
+              				dataType: 'jsonp',
+              				beforeSend: function() {
+              					jQuery( '#geoip' ).html( 'Querying closest servers to you...<br />' );
+              				},
+              				success: function( data, status, jqxhr ) {
+              					jQuery( '#geoip' ).html( '' );
+              					for( ip in data )
+              					{
+              						jQuery( '#geoip' ).html( jQuery( '#geoip' ).html() + data[ip].ip + ' (' + data[ip].short + '): ' + data[ip].stat + '% uptime<br />' );
+              					}
+              				}
+              			} );
+              		} );
+              	</script>
+                <br /><br />
             </div>
         </div>
+            <div class="row">
 
-        {% for post in paginator.posts %}
-        <div class="row no-margin">
-            <a class="waves-effect" href="{{ post.url | prepend: site.baseurl }}">
-                <div class="col s12">
-                    <div class="list-article">
-                        <h4 class="orange-text thin">{{ post.title }}</h4>
-                        <p class="grey-text text-darken-1 light">Published on {{ post.date | date: "%B %-d, %Y" }}.</p>
-                        <article class="grey-text text-darken-2 post-content on-index light">
-                                {{ post.excerpt | strip_html }}. .
-                        </article>
-                        <br/>
-                    </div>
-                    <div class="divider dashed"></div>
-                </div>
-            </a>
-        </div>
-        {% endfor %}
-
+	      <div class="col s12 m4">
+		<div class="icon-block">
+		    <h2 class="center light-blue-text">
+			<i class="fa fa-users" aria-hidden="true"></i></h2>
+		    <h5 class="center">DNS Neutrality</h5>
+		    <p>No corporation should say what websites should or shouldn’t be available to us,
+          or the speed at which they load. By using OpenNIC you no longer have to question your ISPs motives,
+          and can rest assured that your connection to the Internet is not being censored by your DNS servers.</p>
+		  </div>
+	      </div>
+	      <div class="col s12 m4">
+		<div class="icon-block">
+		    <h2 class="center light-blue-text">
+          <i class="fa fa-gift" aria-hidden="true"></i></h2>
+		    <h5 class="center">No Cost</h5>
+		    <p>OpenNIC is a non profit organization and does not charge money for access to its
+          DNS services including the proposal/request of new TLDs. It’s free to use completely operated by volunteers,
+          so there’s no financial pressure to corrupt the OpenNIC system. You too could volunteer and support the system!</p>
+		  </div>
+	      </div>
+	      <div class="col s12 m4">
+		<div class="icon-block">
+		    <h2 class="center light-blue-text">
+			     <i class="fa fa-home" aria-hidden="true"></i></h2>
+		    <h5 class="center">Stop DNS Hijacking</h5>
+        <p>Have you ever typed a wrong URL into your browser only to be met with an ISP-owned search page?
+          The domain you tried to visit, ads you click, and the searches you do can all be collected by your ISP for data-mining and
+          marketing operations.
+          You can stop this behavior with OpenNIC's servers, which lets DNS work the way it was designed to: in your control.</p>
+		  </div>
+	      </div>
+	    </div>
     </div>
-
-    <div class="section">
-
-        {% if paginator.total_pages > 1 %}
-            <ul class="pagination center-align">
-
-                {% if paginator.previous_page %}
-                    <li class="waves-effect orange lighten-2"><a class="white-text" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
-                {% else %}
-                    <li class="waves-effect disabled orange lighten-2"><a class="white-text" href="#">&laquo; Prev</a></li>
-                {% endif %}
-
-                {% for page in (1..paginator.total_pages) %}
-                    {% if page == paginator.page %}
-                        <li class="waves-effect active orange"><a href="#">{{ page }}</a></li>
-                    {% elsif page == 1 %}
-                        <li class="waves-effect orange lighten-2"><a class="white-text" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
-                    {% else %}
-                        <li class="waves-effect orange lighten-2"><a class="white-text" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-                    {% endif %}
-                {% endfor %}
-
-                {% if paginator.next_page %}
-                    <li class="waves-effect orange lighten-2"><a class="white-text" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
-                {% else %}
-                    <li class="waves-effect disabled orange lighten-2"><a class="white-text" href="#">Next &raquo;</a></li>
-                {% endif %}
-
-            </ul>
-        {% endif %}
-
+</div>
+<div class="green">
+	<div class="container">
+    <br /><br />
+		<div class="row">
+			<div class="col s12">
+				<h3 class="white-text center-align thin">New Top Level Domains!</h3>
+				<p class="white-text center-align"><b>Access a whole new space on the web with OpenNIC's exclusive expanding range of new TLDs in addition
+           to the "Legacy" ICANN domains you're already familiar with.</b></p>
+			</div>
+		</div>
+    <div class="row">
+      <div class="col s1">
+        <br />
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotBbsTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.bbs</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotChanTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.chan</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotDynTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.dyn</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotFurTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.fur</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotGeekTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.geek</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s1">
+        <br />
+      </div>
     </div>
+    <div class="row">
+      <div class="col s1">
+        <br />
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotGopherTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.gopher</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotIndyTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.indy</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotFreeTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.libre</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotNeoTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.neo</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotNullTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.null</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s1">
+        <br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1">
+        <br />
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotOTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.o</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotOssTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.oss</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotOzTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.oz</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotParodyTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.parody</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s2">
+        <a href="http://wiki.opennicproject.org/dotPirateTLD" target="_blank">
+          <div class="card-panel white z-depth-1">
+            <span class="black-text"><center>.pirate</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s1">
+        <br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <p class="white-text center-align">Have a TLD idea? Anybody can apply to run their own and expand the OpenNIC network! <b><a class="white-text" href="http://wiki.opennicproject.org/RegisteringATLD" target="_blank">Learn More</a></b>.</p>
+      </div>
+    </div>
+  <br /><br />
+	</div>
+</div>
+
+<div class="container">
+	<div class="row no-margin">
+		<div class="col s12">
+      <br /><br />
+			<h3 class="center-align thin">Donate</h3>
+			<p class="center-align">We provide all this completely free of charge! Please, if you are able, volunteer to <a href="http://wiki.opennicproject.org/Tier2ServerConfig" target="_blank">run a Tier 2 server</a> or feel welcome to make a donation:</p>
+			<p class="center-align">BTC: <b>1GfmMBvDUYVDWyLcDfHwPRwVdec2pg3FrG</b><br />
+                              ETH: <b>0x8111dc2100a2aCA8138c49B4A10766eF481530a6</b></p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <p style="text-align: center;"><input name="cmd" type="hidden" value="_s-xclick"></p>
+          <p style="text-align: center;"><input name="hosted_button_id" type="hidden" value="QZLYC9T3E55KW"></p>
+          <p style="text-align: center;"><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" type="image"></p>
+          <p><img class="aligncenter" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" hidden="" style="display: none !important;"></p>
+      </form>
+			<p class="center-align">We appreciate any and all donations, no matter the size!</p>
+      <br /><br /><br />
+		</div>
+	</div>
 </div>
