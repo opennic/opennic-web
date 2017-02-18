@@ -1,25 +1,23 @@
 <div class="navbar-fixed">
 <nav class="grey darken-4 {{ site.color.navbar }}-text z-depth-0">
     <ul id="slide-out" class="side-nav">
-        <li><a href="{{ site.baseurl }}/" class="{{ site.color.navbar }}-text">Home</a></li>
-        {% for page in site.pages %}
-            {% if page.title %}
-                <li><a href="{{ page.url | prepend: site.baseurl }}" class="{{ site.color.navbar }}-text">{{ page.title }}</a></li>
-            {% endif %}
-        {% endfor %}
-        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="{{ site.color.navbar }}-text">Feed</a></li>
+        <li><a href="{{ site.baseurl }}/" class="black-text">Home</a></li>
+        <li><a href="http://wiki.opennicproject.org/HomePage" class="black-text">Wiki</a></li>
+        <li><a href="/irc/" class="black-text">IRC</a></li>
+        <li><a href="https://servers.opennicproject.org/" class="black-text">Servers</a></li>
+        <li><a href="/press/" class="black-text">Press</a></li>
+        <li><a href="http://wiki.opennicproject.org/GettingStarted/" class="black-text">Get Started!</a></li>
     </ul>
     <div class="container container-large">
-    <a class="brand-logo" href="{{ site.baseurl }}/" class="orange-text"><span class="light {{ site.color.navbar }}-text"><b>{{ site.title }}</b> {{ site.site }}</span></a>
+    <a class="brand-logo" href="{{ site.baseurl }}/" class="{{ site.color.navbar }}-text"><span class="light {{ site.color.navbar }}-text"><b>{{ site.title }}</b> {{ site.site }}</span></a>
     <ul class="right hide-on-med-and-down">
-        {% for page in site.pages %}
-            {% if page.title %}
-                <li><a href="{{ page.url | prepend: site.baseurl }}" class="{{ site.color.navbar }}-text">{{ page.title }}</a></li>
-            {% endif %}
-        {% endfor %}
-        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="{{ site.color.navbar }}-text">Feed</a></li>
+        <li><a href="http://wiki.opennicproject.org/HomePage" class="{{ site.color.navbar }}-text">Wiki</a></li>
+        <li><a href="/irc/" class="{{ site.color.navbar }}-text">IRC</a></li>
+        <li><a href="https://servers.opennicproject.org/" class="{{ site.color.navbar }}-text">Servers</a></li>
+        <li><a href="/press/" class="{{ site.color.navbar }}-text">Press</a></li>
+        <li>&nbsp;&nbsp;&nbsp;<a href="http://wiki.opennicproject.org/GettingStarted/" class="waves-effect waves-light btn white black-text z-depth-0">Get Started</a></li>
     </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse right orange-text"><i class="material-icons">menu</i></a>
+    <a href="#" data-activates="slide-out" class="button-collapse right {{ site.color.navbar }}-text"><i class="material-icons">menu</i></a>
     </div>
 </nav>
 </div>
