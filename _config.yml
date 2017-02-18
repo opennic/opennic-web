@@ -1,6 +1,6 @@
 # Site settings
-title: ModernTLD
-site: Theme
+title: OpenNIC
+site: Project
 description: > # this means to ignore newlines until "baseurl:"
     Write an awesome description for your new site here. You can edit this
     line in _config.yml. It will appear in your document head meta (for
@@ -9,10 +9,10 @@ baseurl: ""
 paginate: 5
 paginate_path: "/page:num/"
 color:
-    main: "orange"
-    navbar: "orange"
-    chips: "green"
-    footer: "blue"
+    main: "black"
+    navbar: "white"
+    chips: "blue"
+    footer: "grey"
 owner:
     email: theme.email@moderntld.com
     facebook:
