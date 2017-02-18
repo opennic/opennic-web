@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    <header>
+        {% include header.html %}
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer class="page-footer no-margin __top {{ site.color.footer }}">
+        {% include footer.html %}
+    </footer>
+    <script type="text/javascript" src="{{ "/assets/js/jquery.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/js/materialize.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript">
+    $(function() {
+        $(".button-collapse").sideNav();
+        $('nav a').addClass('waves-effect');
+    });
+    </script>
+</body>
+</html>

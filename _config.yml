@@ -1,0 +1,39 @@
+# Site settings
+title: ModernTLD
+site: Theme
+description: > # this means to ignore newlines until "baseurl:"
+    Write an awesome description for your new site here. You can edit this
+    line in _config.yml. It will appear in your document head meta (for
+    Google search results) and in your feed.xml site description.
+baseurl: ""
+paginate: 5
+paginate_path: "/page:num/"
+color:
+    main: "orange"
+    navbar: "orange"
+    chips: "green"
+    footer: "blue"
+owner:
+    email: theme.email@moderntld.com
+    facebook:
+        show: false
+        name: "Ichihara Rifa"
+        url: "https://fb.me/nasya.aidan"
+    github:
+        show: true
+        username: "ModernTLD"
+    twitter:
+        show: true
+        username: "ModernTLD"
+    disqus:
+        show: true
+        username: "jonaharagon"
+sass:
+    sass_dir: _sass
+    style: compressed
+permalink: pretty
+markdown: kramdown
+highlighter: rouge
+gems:
+    - jekyll-feed
+    - jekyll-paginate

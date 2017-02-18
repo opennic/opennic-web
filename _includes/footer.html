@@ -1,0 +1,22 @@
+  <div class="container container-large">
+    <div class="row">
+      <div class="col l4 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          {% if site.owner.facebook.show == true %}<li><a class="grey-text text-lighten-3" href="{{ site.owner.facebook.url }}">Facebook:&nbsp;&nbsp;{{ site.owner.facebook.name }}</a></li>{% endif %}
+          {% if site.owner.github.show == true %}<li><a class="grey-text text-lighten-3" href="https://github.com/{{ site.owner.github.username }}">GitHub:&nbsp;&nbsp;@{{ site.owner.github.username }}</a></li>{% endif %}
+          {% if site.owner.twitter.show == true %}<li><a class="grey-text text-lighten-3" href="https://twitter.com/{{ site.owner.twitter.username }}">Twitter:&nbsp;&nbsp;@{{ site.owner.twitter.username }}</a></li>{% endif %}
+          {% if site.owner.email %}<li><a class="grey-text text-lighten-3" href="mailto:{{ site.owner.email }}">Email:&nbsp;&nbsp;{{ site.owner.email }}</a></li>{% endif %}
+        </ul>
+      </div>
+      <div class="col l6 offset-l2 s12 right-align">
+        <h5 class="white-text"><b>{{ site.title }}</b> {{ site.site }}</h5>
+        <p class="grey-text text-lighten-4">{{ site.description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container center-align">
+      Built by <a class="white-text" href="https://github.com/ModernTLD/site-theme">ModernTLD</a>
+    </div>
+  </div>
