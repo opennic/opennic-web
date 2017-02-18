@@ -31,7 +31,7 @@ owner:
 sass:
     sass_dir: _sass
     style: compressed
-permalink: pretty
+permalink: /:year/:month/:day/:title.html
 markdown: kramdown
 highlighter: rouge
 gems:

@@ -11,8 +11,11 @@ layout: default
                 <br/>
                 <div class="divider"></div>
                 <article class="post-categories center-align">
-                    <div class="chip {{ site.color.chips }} white-text">Categories</div>
+                    <div class="chip {{ site.color.chips }} white-text">Category</div>
                     {% for cat in page.categories %}<div class="chip">{{ cat }}</div> {% endfor %}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="chip {{ site.color.chips }} white-text">Author</div>
+                    {% for author in page.author %}<div class="chip">{{ author }}</div> {% endfor %}
                 </article>
                 <article class="grey-text text-darken-2 post-content">
                     {{ content }}
