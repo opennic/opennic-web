@@ -7,7 +7,7 @@ layout: null
   {% for page in site.pages %}
     {% if page.sitemap != null and page.sitemap != empty %}
       <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
+        <loc>https://www.opennic.org{{ page.url }}</loc>
         {% if page.sitemap.lastmod != null %}
           <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
         {% endif %}
@@ -18,7 +18,7 @@ layout: null
   {% endfor %}
   {% for post in site.posts %}
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
+      <loc>https://www.opennic.org{{ post.url }}</loc>
       {% if post.lastmod == null %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
       {% else %}
