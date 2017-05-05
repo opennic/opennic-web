@@ -2,6 +2,9 @@
 layout: page
 title: IRC
 permalink: /irc/
+sitemap:
+    priority: 0.8
+    changefreq: 'weekly'
 ---
 
 If you have an IRC client you can use, you can use the following information to connect to our chat:
