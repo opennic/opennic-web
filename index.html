@@ -32,13 +32,12 @@ sitemap:
                       <li class="tab col s3"><a href="#ipv6">IPv6</a></li>
                     </ul>
                   </div>
-                  <div id="ipv4" class="col s12" style="margin-top: 25px;"></div>
+                  <div id="ipv4" class="col s12" style="margin-top: 25px;"><noscript>"Nearest server" functionality requires Javascript. <a href="https://servers.opennicproject.org/" target="_blank">Click here to see a list of servers.</a></noscript></div>
                   <div id="ipv6" class="col s12" style="margin-top: 25px;"></div>
                 </div>
 
-                <!--<p><a href="https://servers.opennicproject.org/" target="_blank">All Servers</a> &#124; Your closest servers:</p>
-                <div id="geoip"></div>-->
                 <script type="text/javascript">
+                <!--
               		jQuery( document ).ready( function() {
               			jQuery.ajax( {
               				url: 'https://api.opennicproject.org/geoip/?jsonp&res=4&ip=&nearest&ipv=4',
@@ -53,6 +52,7 @@ sitemap:
               					{
               						jQuery( '#ipv4' ).html( jQuery( '#ipv4' ).html() + data[ip].ip + ' (' + data[ip].short + '): ' + data[ip].stat + '% uptime<br />' );
               					}
+                        jQuery( '#ipv4' ).append( '<a href="https://servers.opennicproject.org/" target="_blank">More Servers...</a>' )
               				}
               			} );
                     jQuery.ajax( {
@@ -68,11 +68,12 @@ sitemap:
               					{
               						jQuery( '#ipv6' ).html( jQuery( '#ipv6' ).html() + data[ip].ip + ' (' + data[ip].short + '): ' + data[ip].stat + '% uptime<br />' );
               					}
+                        jQuery( '#ipv6' ).append( '<a href="https://servers.opennicproject.org/" target="_blank">More Servers...</a>' )
               				}
               			} );
               		} );
+                -->
               	</script>
-                <br />
                 <p><a href="{{ "/irc/" | prepend: site.baseurl }}">Want to learn more or chat with us? Click here to join our IRC channel!</a></p>
                 <br />
             </div>
