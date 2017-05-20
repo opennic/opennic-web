@@ -24,22 +24,49 @@ sitemap:
             		<br /><p>Want to switch? Click the blue button!</p>
             		<a href="http://wiki.opennic.org/start" class="waves-effect waves-light btn-large z-depth-0 blue" target="_blank">Find Out More!</a>
             		<br /><br />
-                <p><a href="https://servers.opennicproject.org/" target="_blank">All Servers</a> &#124; Your closest servers:</p>
-                <div id="geoip"></div>
+
+                <div class="row">
+                  <div class="col s12 m6 offset-m3">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="active" href="#ipv4">IPv4</a></li>
+                      <li class="tab col s3"><a href="#ipv6">IPv6</a></li>
+                    </ul>
+                  </div>
+                  <div id="ipv4" class="col s12" style="margin-top: 25px;"></div>
+                  <div id="ipv6" class="col s12" style="margin-top: 25px;"></div>
+                </div>
+
+                <!--<p><a href="https://servers.opennicproject.org/" target="_blank">All Servers</a> &#124; Your closest servers:</p>
+                <div id="geoip"></div>-->
                 <script type="text/javascript">
               		jQuery( document ).ready( function() {
               			jQuery.ajax( {
-              				url: 'https://api.opennicproject.org/geoip/?jsonp&res=4&ip=&nearest',
+              				url: 'https://api.opennicproject.org/geoip/?jsonp&res=4&ip=&nearest&ipv=4',
               				method: 'GET',
               				dataType: 'jsonp',
               				beforeSend: function() {
-              					jQuery( '#geoip' ).html( 'Querying closest servers to you...<br />' );
+              					jQuery( '#ipv4' ).html( 'Querying closest servers to you...<br />' );
               				},
               				success: function( data, status, jqxhr ) {
-              					jQuery( '#geoip' ).html( '' );
+              					jQuery( '#ipv4' ).html( '' );
               					for( ip in data )
               					{
-              						jQuery( '#geoip' ).html( jQuery( '#geoip' ).html() + data[ip].ip + ' (' + data[ip].short + '): ' + data[ip].stat + '% uptime<br />' );
+              						jQuery( '#ipv4' ).html( jQuery( '#ipv4' ).html() + data[ip].ip + ' (' + data[ip].short + '): ' + data[ip].stat + '% uptime<br />' );
+              					}
+              				}
+              			} );
+                    jQuery.ajax( {
+              				url: 'https://api.opennicproject.org/geoip/?jsonp&res=4&ip=&nearest&ipv=6',
+              				method: 'GET',
+              				dataType: 'jsonp',
+              				beforeSend: function() {
+              					jQuery( '#ipv6' ).html( 'Querying closest servers to you...<br />' );
+              				},
+              				success: function( data, status, jqxhr ) {
+              					jQuery( '#ipv6' ).html( '' );
+              					for( ip in data )
+              					{
+              						jQuery( '#ipv6' ).html( jQuery( '#ipv6' ).html() + data[ip].ip + ' (' + data[ip].short + '): ' + data[ip].stat + '% uptime<br />' );
               					}
               				}
               			} );
@@ -92,7 +119,7 @@ sitemap:
 		<div class="row">
 			<div class="col s12">
 				<h3 class="white-text center-align thin">New Top-Level Domains!</h3>
-				<p class="white-text center-align">OpenNIC's TLDs grant you access a whole new space on the web. These domains can only be accessed <b><a href="http://wiki.opennic.org/start" class="white-text">using our democratic nameservers</a></b>. Once you're in, click a button below to register your free domain!</p>
+				<p class="white-text center-align">OpenNIC's TLDs grant you access to a whole new space on the web. These domains can only be accessed <b><a href="http://wiki.opennic.org/start" class="white-text">using our democratic nameservers</a></b>. Once you're in, click a button below to register your free domain!</p>
 			</div>
 		</div>
     <div class="row">
@@ -118,7 +145,7 @@ sitemap:
         </a>
       </div>
       <div class="col s4 m3 l2">
-        <a href="http://wiki.opennic.org/opennic:dot:fur" target="_blank">
+        <a href="http://www.nic.fur/" target="_blank">
           <div class="card-panel white z-depth-0">
             <span class="black-text"><center>.fur</center></span>
           </div>

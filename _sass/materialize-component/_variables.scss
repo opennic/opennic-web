@@ -1,5 +1,5 @@
 /*** Colors ***/
-$primary-color: color("orange", "lighten-2") !default;
+$primary-color: color("blue", "lighten-2") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
