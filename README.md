@@ -44,4 +44,4 @@ Like pages, the rest of the post is written in GitHub Flavored Markdown.
 
 ## This site
 
-...was built by [Jonah Aragon](https://github.com/JonahAragon) for [OpenNIC](https://www.opennicproject.org). The theme is loosely based on [this theme](https://github.com/ModernTLD/site-theme) by ModernTLD.
+...was built by [Jonah Aragon](https://github.com/JonahAragon) for [OpenNIC](https://www.opennic.org). The theme is loosely based on [this theme](https://github.com/ModernTLD/site-theme) by ModernTLD.
