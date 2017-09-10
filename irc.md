@@ -16,10 +16,10 @@ If you have an IRC client you can use, you can use the following information to 
 
 Need an IRC client? Here's some suggestions for various platforms:
 
-Windows: [HexChat](https://hexchat.github.io/), [mIRC](http://www.mirc.com/)
-Linux GUI: [XChat](http://www.xchat.org/), [Konversation](https://konversation.kde.org/)
-macOS: [Snak](http://www.snak.com/), [Colloquy](http://colloquy.info/), [Textual](https://www.codeux.com/textual/)
-Command Line: [irssi](http://www.irssi.org/), [WeeChat](https://weechat.org/)
+- Windows: [HexChat](https://hexchat.github.io/), [mIRC](http://www.mirc.com/)
+- Linux GUI: [XChat](http://www.xchat.org/), [Konversation](https://konversation.kde.org/)
+- macOS: [Snak](http://www.snak.com/), [Colloquy](http://colloquy.info/), [Textual](https://www.codeux.com/textual/)
+- Command Line: [irssi](http://www.irssi.org/), [WeeChat](https://weechat.org/)
 
 Using a web based system (like ChromeOS)? Check out [KiwiIRC](https://kiwiirc.com/). Want to stay always connected with distributed clients? Check out [Quassel](http://quassel-irc.org/).
 
