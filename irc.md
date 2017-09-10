@@ -14,15 +14,13 @@ If you have an IRC client you can use, you can use the following information to 
 
 ---
 
-No idea what any of that means? If you just want a simple chat you can use the webchat below:
+Need an IRC client? Here's some suggestions for various platforms:
 
-<div class="row">
-  <div class="col s12">
-    <div class="card-panel red">
-      <span class="white-text">If you're using this webchat, <b>please</b> do not close the tab or your browser! You will disconnect from our IRC server and won't be able to see any replies.
-      </span>
-    </div>
-  </div>
-</div>
+Windows: [HexChat](https://hexchat.github.io/), [mIRC](http://www.mirc.com/)
+Linux GUI: [XChat](http://www.xchat.org/), [Konversation](https://konversation.kde.org/)
+macOS: [Snak](http://www.snak.com/), [Colloquy](http://colloquy.info/), [Textual](https://www.codeux.com/textual/)
+Command Line: [irssi](http://www.irssi.org/), [WeeChat](https://weechat.org/)
 
-<iframe src="https://webchat.freenode.net?randomnick=1&channels=%23opennic&prompt=1&uio=d4" width="100%" height="600" frameBorder="0"></iframe>
+Using a web based system (like ChromeOS)? Check out [KiwiIRC](https://kiwiirc.com/). Want to stay always connected with distributed clients? Check out [Quassel](http://quassel-irc.org/).
+
+We can not support you with your IRC client, contact the developers of the client you're using if you have any issues. The links above are only suggestions and we can't be held responsible for any damage or issues they may cause.
