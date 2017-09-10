@@ -21,6 +21,6 @@ Need an IRC client? Here's some suggestions for various platforms:
 - macOS: [Snak](http://www.snak.com/), [Colloquy](http://colloquy.info/), [Textual](https://www.codeux.com/textual/)
 - Command Line: [irssi](http://www.irssi.org/), [WeeChat](https://weechat.org/)
 
-Using a web based system (like ChromeOS)? Check out [KiwiIRC](https://kiwiirc.com/). Want to stay always connected with distributed clients? Check out [Quassel](http://quassel-irc.org/).
+Using a web based system (like ChromeOS)? Check out [KiwiIRC](https://kiwiirc.com/). Want a simple, hosted online solution? Check out [IRCCloud](https://www.irccloud.com/). Want to stay always connected with distributed clients? Check out [Quassel](http://quassel-irc.org/). 
 
 We can not support you with your IRC client, contact the developers of the client you're using if you have any issues. The links above are only suggestions and we can't be held responsible for any damage or issues they may cause.
