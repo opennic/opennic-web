@@ -7,7 +7,7 @@ sitemap:
     changefreq: 'weekly'
 ---
 
-If you have an IRC client you can use, you can use the following information to connect to our chat:
+With an IRC client installed, you can connect with us using the following information:
 
 - Server: chat.freenode.net:6697 (use SSL)
 - Channel: #opennic
