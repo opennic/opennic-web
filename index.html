@@ -26,10 +26,10 @@ sitemap:
             		<br /><br />
                 <p><a href="https://servers.opennic.org/" target="_blank">All Servers</a> &#124; Your closest servers:</p>
                 <div class="row">
-                  <div class="col s12 m6 offset-l1">
+                  <div class="col s12 m6">
                     <div id="geoip4"></div>
                   </div>
-                  <div class="col s12 m6 offset-l1">
+                  <div class="col s12 m6">
                     <div id="geoip6"></div>
                   </div>
                 </div>
@@ -51,7 +51,7 @@ sitemap:
               				}
               			} );
                     jQuery.ajax( {
-              				url: 'https://api.opennic.org/geoip/?jsonp&res=4&ipv=4',
+              				url: 'https://api.opennic.org/geoip/?jsonp&res=4&ipv=6',
               				method: 'GET',
               				dataType: 'jsonp',
               				beforeSend: function() {
