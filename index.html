@@ -46,7 +46,7 @@ sitemap:
               					jQuery( '#geoip4' ).html( '' );
               					for( ip in data )
               					{
-              						jQuery( '#geoip4' ).html( jQuery( '#geoip4' ).html() + data[ip].ip + ' (' + data[ip].short + '): ' + data[ip].stat + '% uptime<br />' );
+              						jQuery( '#geoip4' ).html( jQuery( '#geoip4' ).html() + data[ip].ip + ' (<a href="https://servers.opennicproject.org/edit.php?srv=' + data[ip].host + '">' + data[ip].short + '</a>)<br />' );
               					}
               				}
               			} );
@@ -61,7 +61,7 @@ sitemap:
               					jQuery( '#geoip6' ).html( '' );
               					for( ip in data )
               					{
-              						jQuery( '#geoip6' ).html( jQuery( '#geoip6' ).html() + data[ip].ip + ' (' + data[ip].short + '): ' + data[ip].stat + '% uptime<br />' );
+              						jQuery( '#geoip6' ).html( jQuery( '#geoip6' ).html() + data[ip].ip + ' (<a href="https://servers.opennicproject.org/edit.php?srv=' + data[ip].host + '">' + data[ip].short + '</a>)<br />' );
               					}
               				}
               			} );
