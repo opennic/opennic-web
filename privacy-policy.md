@@ -48,6 +48,8 @@ OpenNIC.org takes all measures reasonably necessary to protect against the unaut
 
 OpenNIC.org may collect statistics about the behavior of visitors to its websites, and may reveal generalized statistics related to a variety of our services.
 
+We are currently releasing non-personally-identifying information to the public at [https://matomo.opennic.org/](https://matomo.opennic.org/index.php).
+
 ## Cookies
 
 A cookie is a string of information that a website stores on a visitor’s computer, and that the visitor’s browser provides to the website each time the visitor returns. OpenNIC.org uses cookies to help OpenNIC.org identify and track visitors, their usage of OpenNIC.org website, and their website access preferences. OpenNIC.org visitors who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using OpenNIC.org’s websites, with the drawback that certain features of OpenNIC.org’s websites may not function properly without the aid of cookies.
