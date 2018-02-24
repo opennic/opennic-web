@@ -40,7 +40,7 @@ sitemap:
               				method: 'GET',
               				dataType: 'jsonp',
               				beforeSend: function() {
-              					jQuery( '#geoip4' ).html( 'Querying closest servers to you...<br />' );
+              					jQuery( '#geoip4' ).html( 'Finding the closest IPv4 servers to you...<br />' );
               				},
               				success: function( data, status, jqxhr ) {
               					jQuery( '#geoip4' ).html( '' );
@@ -55,7 +55,7 @@ sitemap:
               				method: 'GET',
               				dataType: 'jsonp',
               				beforeSend: function() {
-              					jQuery( '#geoip6' ).html( 'Querying closest servers to you...<br />' );
+              					jQuery( '#geoip6' ).html( 'Finding the closest IPv6 servers to you...<br />' );
               				},
               				success: function( data, status, jqxhr ) {
               					jQuery( '#geoip6' ).html( '' );
