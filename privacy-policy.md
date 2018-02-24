@@ -48,7 +48,7 @@ OpenNIC.org takes all measures reasonably necessary to protect against the unaut
 
 OpenNIC.org may collect statistics about the behavior of visitors to its websites, and may reveal generalized statistics related to a variety of our services.
 
-We are currently releasing non-personally-identifying information to the public at [https://matomo.opennic.org/](https://matomo.opennic.org/index.php).
+We are currently releasing non-personally-identifying information to the public at [https://matomo.opennic.org/](https://matomo.opennic.org/).
 
 ## Cookies
 
