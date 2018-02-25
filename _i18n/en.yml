@@ -3,7 +3,13 @@ global:
   project: "Project"
 title:
   home: "Home"
+  wiki: "Wiki"
   irc: "IRC"
+  servers: "Servers"
   about: "About"
   privacy: "Privacy Policy"
   press: "Press Releases"
+  members: "Members"
+text:
+  helpgit: "Help edit this site on GitHub!"
+  start: "Get Started!"

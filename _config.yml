@@ -9,8 +9,7 @@ url: "https://www.opennic.org"
 include: ["_redirects"]
 paginate: 5
 paginate_path: "/page:num/"
-languages: ["en", "fr"]
-exclude_from_localizations: ["javascript", "images", "css"]
+languages: ["en"]
 color:
     main: "black"
     navbar: "white"
