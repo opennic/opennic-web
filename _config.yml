@@ -1,6 +1,6 @@
 # Site settings
-title: OpenNIC
-site: Project
+title: global.opennic
+site: global.project
 description: > # this means to ignore newlines until "baseurl:"
     An organization of hobbyists who run an alternative DNS network,
     also provides access to domains not administered by ICANN.
@@ -9,7 +9,8 @@ url: "https://www.opennic.org"
 include: ["_redirects"]
 paginate: 5
 paginate_path: "/page:num/"
-languages: ["en"]
+languages: ["en", "fr"]
+exclude_from_localizations: ["javascript", "images", "css"]
 color:
     main: "black"
     navbar: "white"

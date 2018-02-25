@@ -1,0 +1,9 @@
+global:
+  opennic: "OpenNIC"
+  project: "Project"
+title:
+  home: "Home"
+  irc: "IRC"
+  about: "About"
+  privacy: "Privacy Policy"
+  press: "Press Releases"

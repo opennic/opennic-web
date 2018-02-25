@@ -1,0 +1,9 @@
+global:
+  opennic: "OpenNICF"
+  project: "ProjectC"
+title:
+  home: "FHome"
+  irc: "FIRC"
+  about: "FAbout"
+  privacy: "FPrivacy Policy"
+  press: "FPress Releases"
