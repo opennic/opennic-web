@@ -1,0 +1,292 @@
+<style>
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .fa {
+	font-size: 1.25em;
+}
+</style>
+<div class="container">
+    <div class="group-article">
+        <div class="row no-margin">
+            <div class="col s12 center-align">
+                <br /><br />
+                <h2 class="black-text center-align">{% t site.title %}</h2>
+                <br />
+            		<h5>Looking for an open and democratic alternative DNS root? Concerned about censorship?</h5>
+                <h5>{% t site.title %} might be the solution for you!</h5>
+            		<br />
+            		<a href="https://wiki.opennic.org/start" class="waves-effect waves-light btn-large z-depth-0 blue">Find Out More!</a>
+            		<br /><br />
+                <p>Your closest servers: <a href="https://servers.opennic.org/">(view all)</a></p>
+                <div class="row">
+                  <div class="col s12 m6 l5 offset-l1">
+                    <div id="geoip4"></div>
+                  </div>
+                  <div class="col s12 m6 l5">
+                    <div id="geoip6"></div>
+                  </div>
+                </div>
+                <script type="text/javascript">
+              		jQuery( document ).ready( function() {
+              			jQuery.ajax( {
+              				url: 'https://api.opennic.org/geoip/?jsonp&res=4&ipv=4',
+              				method: 'GET',
+              				dataType: 'jsonp',
+              				beforeSend: function() {
+              					jQuery( '#geoip4' ).html( 'Finding the closest IPv4 servers to you...<br />' );
+              				},
+              				success: function( data, status, jqxhr ) {
+              					jQuery( '#geoip4' ).html( '' );
+              					for( ip in data )
+              					{
+              						jQuery( '#geoip4' ).html( jQuery( '#geoip4' ).html() + data[ip].ip + ' (<a href="https://servers.opennicproject.org/edit.php?srv=' + data[ip].host + '">' + data[ip].short + '</a>)<br />' );
+              					}
+              				}
+              			} );
+                    jQuery.ajax( {
+              				url: 'https://api.opennic.org/geoip/?jsonp&res=4&ipv=6',
+              				method: 'GET',
+              				dataType: 'jsonp',
+              				beforeSend: function() {
+              					jQuery( '#geoip6' ).html( 'Finding the closest IPv6 servers to you...<br />' );
+              				},
+              				success: function( data, status, jqxhr ) {
+              					jQuery( '#geoip6' ).html( '' );
+              					for( ip in data )
+              					{
+              						jQuery( '#geoip6' ).html( jQuery( '#geoip6' ).html() + data[ip].ip + ' (<a href="https://servers.opennicproject.org/edit.php?srv=' + data[ip].host + '">' + data[ip].short + '</a>)<br />' );
+              					}
+              				}
+              			} );
+              		} );
+              	</script>
+                <br />
+                <p><a href="{{ "/irc/" | prepend: site.baseurl }}">Want to learn more or chat with us? Click here to join our IRC channel!</a></p>
+                <br />
+            </div>
+        </div>
+            <div class="row">
+
+	      <div class="col s12 m4">
+		<div class="icon-block">
+		    <h2 class="center light-blue-text">
+			<i class="fa fa-users" aria-hidden="true"></i></h2>
+		    <h5 class="center">DNS Neutrality</h5>
+		    <p>No corporation should be able to say what websites are or aren’t available to us. By using our volunteer-provided DNS servers you no longer have to question your ISPs motives,
+          and can rest assured that your connection to the Internet is not being censored by your DNS servers.</p>
+		  </div>
+	      </div>
+	      <div class="col s12 m4">
+		<div class="icon-block">
+		    <h2 class="center light-blue-text">
+          <i class="fa fa-gift" aria-hidden="true"></i></h2>
+		    <h5 class="center">No Cost</h5>
+		    <p>We are a non profit organization and do not charge money for access to our
+          DNS services, including the proposal/request of new TLDs. Free to use, and completely operated by volunteers,
+          so there’s no financial pressure to corrupt our organization. New volunteers welcome!</p>
+		  </div>
+	      </div>
+	      <div class="col s12 m4">
+		<div class="icon-block">
+		    <h2 class="center light-blue-text">
+			     <i class="fa fa-home" aria-hidden="true"></i></h2>
+		    <h5 class="center">Stop DNS Hijacking</h5>
+        <p>Have you ever typed a wrong URL into your browser only to be met with an ISP-owned search page?
+          The domain you tried to visit, ads you click, and the searches you do can all be collected by your ISP for any number of nefarious purposes.
+          You can stop this behavior with OpenNIC servers, which lets DNS work the way it was meant to: in your control.</p>
+		  </div>
+	      </div>
+	    </div>
+    </div>
+</div>
+<br />
+<div class="green">
+	<div class="container">
+    <br /><br />
+		<div class="row">
+			<div class="col s12">
+				<h3 class="white-text center-align thin">New Top-Level Domains!</h3>
+				<p class="white-text center-align">OpenNIC's TLDs grant you access to a whole new space on the web. These domains can only be accessed <b><a href="https://wiki.opennic.org/start" class="white-text">using our democratic nameservers</a></b>. Once you're in, click a button below to register your free domain!</p>
+			</div>
+		</div>
+    <div class="row">
+      <div class="col s4 m3 l2 offset-l1">
+        <a href="https://wiki.opennic.org/opennic:dot:bbs">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.bbs</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="https://www.opennic.chan/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.chan</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.dyn</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://nic.fur/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.fur</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.geek</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2 offset-l1">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.gopher</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.indy</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.libre</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://register.neo/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.neo</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://register.null/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.null</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2 offset-l1">
+        <a href="http://opennic.o/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.o</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.oss</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://opennic.oz/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.oz</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.parody</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.pirate</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s1 hide-on-med-and-down">
+        <br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <p class="white-text center-align">Anybody with the right experience can apply to run their own TLD on our network! <b><a class="white-text" href="https://wiki.opennic.org/opennic/creating_new_tlds">Learn More</a></b>.</p>
+      </div>
+    </div>
+  <br /><br />
+	</div>
+</div>
+
+<div class="container">
+  <div class="row no-margin">
+    <div class="col s12">
+      <br /><br />
+      <h3 class="center-align thin">Peered Networks</h3>
+      <p class="center-align">We are peered with many different alternative DNS roots to give you easy access to a multitude of different namespaces, all from one server.</p>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text" style="height: 66px;">
+              <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 20010904//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="0 0 2000.000000 2000.000000" height="66px" width="66px" xmlns="http://www.w3.org/2000/svg"><g fill="#000000" stroke="none" transform="translate(0.000000,2000.000000) scale(0.100000,-0.100000)"><path d="M9638 19195 c-2 -1 -59 -5 -128 -9 -184 -9 -299 -18 -420 -31 -19 -3 -84 -9 -145 -16 -60 -6 -117 -13 -125 -14 -9 -2 -43 -6 -75 -10 -33 -4 -67 -9 -75 -10 -17 -3 -91 -15 -135 -21 -131 -20 -416 -75 -565 -109 -8 -2 -44 -10 -80 -18 -394 -91 -1014 -286 -1295 -408 -11 -4 -76 -31 -145 -60 -351 -144 -908 -424 -1145 -577 -11 -6 -27 -15 -35 -19 -8 -4 -58 -34 -110 -66 -384 -241 -775 -526 -1090 -793 -32 -27 -191 -165 -206 -179 -241 -217 -522 -498 -717 -717 -70 -78 -79 -89 -150 -172 -23 -27 -56 -66 -73 -85 -97 -113 -352 -447 -465 -611 -54 -76 -265 -400 -306 -466 -171 -279 -384 -675 -497 -924 -50 -109 -95 -209 -106 -235 -4 -11 -15 -36 -23 -55 -8 -19 -34 -82 -57 -140 -23 -58 -46 -114 -51 -125 -43 -101 -173 -478 -224 -650 -28 -93 -83 -289 -90 -315 -1 -8 -11 -44 -20 -80 -9 -36 -18 -72 -20 -80 -2 -8 -13 -55 -25 -105 -12 -49 -24 -103 -26 -120 -3 -16 -10 -48 -16 -70 -5 -22 -12 -51 -14 -65 -3 -14 -7 -36 -9 -50 -3 -14 -8 -36 -10 -50 -3 -14 -7 -36 -10 -50 -3 -14 -12 -68 -21 -120 -8 -52 -17 -106 -20 -120 -2 -14 -6 -34 -8 -46 -2 -12 -7 -45 -11 -75 -3 -30 -8 -65 -10 -79 -3 -14 -7 -47 -10 -75 -3 -27 -8 -61 -10 -75 -4 -31 -15 -131 -20 -185 -8 -100 -17 -203 -20 -235 -27 -274 -26 -1137 0 -1365 2 -16 6 -64 9 -105 7 -92 13 -150 32 -305 21 -178 31 -250 50 -365 4 -25 8 -52 9 -60 2 -8 5 -31 9 -50 4 -19 11 -60 16 -90 6 -30 12 -66 15 -80 3 -14 8 -41 11 -60 10 -53 11 -56 39 -185 34 -149 41 -179 55 -235 6 -25 14 -53 16 -63 73 -308 293 -970 400 -1204 8 -17 14 -34 14 -38 0 -3 11 -31 25 -61 14 -30 36 -80 49 -112 131 -309 398 -816 603 -1146 100 -159 266 -410 283 -426 3 -3 14 -18 24 -35 44 -69 360 -483 421 -551 5 -6 30 -36 55 -65 303 -361 681 -744 1026 -1039 60 -51 111 -96 114 -99 20 -23 421 -334 524 -406 16 -11 40 -29 55 -41 67 -53 516 -344 655 -424 641 -369 1208 -624 1836 -825 131 -42 303 -95 327 -100 10 -3 95 -24 188 -49 168 -43 452 -109 530 -122 22 -4 49 -8 60 -11 72 -14 176 -33 210 -38 22 -3 65 -10 95 -15 30 -5 80 -12 110 -15 30 -4 62 -8 70 -10 8 -2 38 -7 65 -10 28 -3 84 -10 125 -15 74 -9 116 -13 255 -25 39 -3 88 -8 110 -10 273 -27 1062 -27 1355 0 19 1 73 6 120 10 47 3 99 8 115 9 38 4 150 17 190 21 17 2 53 7 80 10 28 3 61 7 75 10 14 2 45 6 70 10 25 3 56 8 70 10 14 3 39 7 55 9 101 16 280 48 284 50 3 2 28 7 54 10 92 13 577 128 717 171 25 7 79 23 120 35 318 92 814 273 1066 390 36 16 67 30 69 30 13 0 477 228 608 299 140 76 426 242 482 281 24 16 46 30 49 30 24 0 657 447 811 572 102 83 349 290 385 322 192 175 276 255 409 387 226 227 421 441 600 659 34 41 70 85 81 98 11 13 62 78 113 145 468 612 855 1267 1149 1947 27 63 56 129 64 147 8 17 14 34 14 38 0 4 6 21 14 38 20 42 86 215 86 223 0 3 7 20 15 37 58 122 228 683 304 1001 57 236 60 250 92 416 17 89 29 161 74 430 2 14 6 48 10 75 3 28 7 59 9 70 2 11 7 52 10 90 4 39 9 81 11 95 8 57 14 120 21 205 3 50 8 106 9 125 27 292 27 1073 0 1340 -2 19 -6 71 -9 115 -14 181 -45 436 -81 670 -15 101 -46 268 -50 275 -2 3 -6 30 -10 60 -4 30 -9 58 -11 61 -2 3 -6 21 -9 40 -9 52 -103 447 -120 504 -8 28 -24 84 -35 125 -52 185 -150 491 -176 547 -8 17 -14 35 -14 39 0 8 -41 124 -60 169 -5 11 -36 90 -70 175 -35 85 -76 183 -91 218 -16 34 -29 64 -29 67 0 22 -247 518 -362 725 -230 416 -585 946 -853 1275 -61 75 -189 229 -195 235 -3 3 -34 39 -70 80 -36 41 -69 80 -75 86 -243 268 -565 588 -739 736 -22 18 -49 42 -60 53 -76 72 -376 315 -541 438 -71 53 -134 100 -140 105 -72 59 -433 296 -622 410 -586 352 -1186 631 -1808 840 -139 47 -370 119 -405 127 -8 2 -64 17 -125 34 -60 17 -119 33 -130 35 -11 3 -76 18 -145 35 -158 38 -294 68 -345 76 -22 3 -56 10 -75 15 -19 4 -53 11 -75 14 -22 3 -53 8 -70 11 -63 12 -83 15 -185 31 -58 8 -116 17 -130 19 -14 2 -50 6 -80 10 -30 3 -66 8 -80 10 -28 5 -86 11 -200 21 -41 4 -88 8 -105 9 -16 2 -75 6 -130 10 -55 4 -116 9 -135 11 -38 5 -887 14 -892 9z m-3235 -3645 c224 -56 269 -72 457 -160 143 -67 243 -127 745 -452 319 -206 785 -506 1035 -668 628 -405 2033 -1312 2215 -1430 171 -110 1490 -961 2065 -1332 l385 -248 6 1402 c6 1398 14 1718 44 1922 19 127 62 259 132 406 48 100 65 125 132 190 80 79 242 195 348 249 96 48 198 77 365 106 134 23 200 27 536 36 211 6 384 9 386 7 4 -7 -42 -9652 -48 -9818 -14 -426 -96 -656 -306 -854 -184 -173 -456 -301 -692 -325 -221 -22 -437 26 -688 153 -208 105 -287 158 -875 576 -236 169 -1465 1044 -2730 1945 -3103 2211 -3086 2198 -3121 2223 l-31 21 5 -1222 c6 -1529 -14 -2497 -57 -2707 -74 -368 -286 -643 -626 -813 -136 -68 -263 -104 -500 -144 -87 -14 -164 -18 -370 -18 -143 0 -294 4 -336 9 l-77 7 -6 1332 c-19 4048 -27 8289 -16 8457 21 332 76 549 177 709 64 102 137 165 312 270 238 144 396 188 726 201 99 3 195 7 213 8 18 1 106 -16 195 -38z"/><path d="M6958 13090 c-51 -15 -98 -51 -122 -93 -52 -91 -55 -117 -70 -667 -18 -700 -14 -739 97 -905 39 -59 75 -84 3064 -2100 1664 -1122 3041 -2048 3061 -2057 101 -48 224 7 252 113 7 25 10 281 8 746 -3 802 1 757 -86 846 -26 27 -76 70 -112 96 -36 26 -1381 936 -2990 2022 -1890 1275 -2943 1980 -2975 1991 -54 19 -85 21 -127 8z"/></g></svg>
+            </h2>
+            <h5 class="center">Namecoin</h5>
+            <p>Providing resolution to any <b>.bit</b> domain on the Namecoin blockchain through all of our Tier 2 resolvers. <br /><a href="https://wiki.opennic.org/opennic:dot:bit">Learn more</a>.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text" style="height: 66px;">
+              <?xml version="1.0" ?><svg enable-background="new 0 0 226.777 226.777" height="66px" id="Layer_1" version="1.1" viewBox="0 0 226.777 226.777" width="66px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M168.53,15.763H56.781L0,113.389l56.781,97.625h112.64l57.567-97.96L168.53,15.763z M157.179,189.625   H69.083l-44.339-76.236l44.339-76.235h87.343l45.679,76.022L157.179,189.625z" fill="#231F20"/><polygon fill="#231F20" points="71.571,88.983 103.655,88.983 103.655,104.34 71.571,104.34 71.571,122.438 121.755,122.438    121.755,88.983 136.7,88.983 136.7,136.011 71.571,136.011 71.571,154.11 154.8,154.11 154.8,70.882 71.571,70.882  "/></g></svg>            </h2>
+            <h5 class="center">Emercoin</h5>
+            <p>We've <a href="https://emercoin.com/2015-01-15-Emercoin_Reaches_Peering_Agreement_with_OpenNIC">partnered with Emercoin</a> to bring you access to the <b>.lib</b>, <b>.coin</b>, <b>.emc</b>, and <b>.bazar</b> TLDs. <br /><a href="https://wiki.opennic.org/opennic:namespaces#peered_top-level_domains">Learn more</a>.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text" style="height: 66px;">
+              <i class="fa fa-flag" aria-hidden="true"></i>
+            </h2>
+            <h5 class="center">New Nations</h5>
+            <p><a href="http://new-nations.net/en/">New Nations</a>' TLDs provide namespaces for emerging countries, accessible anywhere via OpenNIC.<br /><a href="https://wiki.opennic.org/opennic:namespaces#peered_top-level_domains">Learn more</a>.</p>
+          </div>
+        </div>
+      </div>
+      <p class="center-align">Everything is accessible through our <a href="https://servers.opennic.org/">global network of DNS resolvers</a>. If you operate an alternative DNS root, <a href="https://wiki.opennic.org/help"> get in touch</a>!</p>
+      <br /><br /><br />
+    </div>
+  </div>
+</div>
+
+<div class="blue">
+  <div class="container white-text">
+  	<div class="row no-margin">
+  		<div class="col s12">
+        <br /><br />
+  			<h3 class="center-align thin">Donate</h3>
+  			<p class="center-align">We provide all this completely free of charge! Please, if you are able, consider running a Tier 2 server or make a donation:</p>
+  			<p class="center-align">BTC: <b>1yM2wmPrRLSXkatn5oFLjhpXzTwDvNCpp</b><br />
+                                ETH: <b>0x8111dc2100a2aCA8138c49B4A10766eF481530a6</b><br />
+			        XMR: <b>45ddJYG1m6g21pJabJS5dvJDe8mW5obu9QreK7dxAMgJCGNP1A3J6Cub8zGic9pKbjXcwSghzFTr4RmGta5xVhsHNtZpJAK</b></p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <p style="text-align: center;"><input name="cmd" type="hidden" value="_s-xclick"></p>
+            <p style="text-align: center;"><input name="hosted_button_id" type="hidden" value="QZLYC9T3E55KW"></p>
+            <p style="text-align: center;"><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" type="image"></p>
+        </form>
+  			<p class="center-align">We appreciate any and all donations, no matter the size!</p>
+        <br /><br /><br />
+  		</div>
+  	</div>
+  </div>
+</div>
