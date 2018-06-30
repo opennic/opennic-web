@@ -7,7 +7,7 @@ category:
   - a.sks.jda.mn
 author: Jonah Aragon
 ---
-
+<div id="posting"></div>
 We have renamed the "Press Releases" page to a more general "Announcements" section. This change is intended to open up posting to all DNS server operators, to have a web and RSS based platform to inform users of potential planned or unplanned downtime, announcing servers in new locations, or announcing the removal of servers.
 
 ### Posting new announcements
