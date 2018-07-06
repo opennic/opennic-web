@@ -1,4 +1,4 @@
-With an IRC client installed, you can connect with us using the following information:
+Currently, our only modes of official communication are IRC and the [mailing list](https://wiki.opennic.org/opennic/mailinglist). With an IRC client installed, you can connect with us using the following information:
 
 - Server: chat.freenode.net:6697 (use SSL)
 - Channel: #opennic
@@ -15,3 +15,33 @@ Need an IRC client? Here's some suggestions for various platforms:
 Using a web based system (like ChromeOS)? Check out [KiwiIRC](https://kiwiirc.com/). Want a simple, hosted online solution? Check out [IRCCloud](https://www.irccloud.com/). Want to stay always connected with distributed clients? Check out [Quassel](http://quassel-irc.org/).
 
 We can not support you with your IRC client, contact the developers of the client you're using if you have any issues. The links above are only suggestions and we can't be held responsible for any damage or issues they may cause.
+
+---
+
+Members of our community have also formed unofficial discussion centers where you may be able to find support.
+
+<div class="row">
+  <div class="col s12 m6">
+    <div class="card light-blue darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">talk.geek</span>
+        <p>talk.geek is an unofficial phpBB forum for support and discussion on OpenNIC related topics.</p>
+      </div>
+      <div class="card-action">
+        <a class="blue-text text-lighten-5" href="http://talk.geek">Visit Forum</a>
+        <a class="blue-text text-lighten-5" href="https://talkdotgeek.com">ICANN Mirror</a>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m6">
+    <div class="card" style="background-color: #7289da;">
+      <div class="card-content white-text">
+        <span class="card-title">OpenNIC on Discord</span>
+        <p>We have an unofficial Discord server operated by Jonah (ns11.opennic.glue) for support and discussion.</p>
+      </div>
+      <div class="card-action">
+        <a class="purple-text text-lighten-5" href="https://discord.gg/6qTNcEE">Join us on Discord</a>
+      </div>
+    </div>
+  </div>
+</div>
