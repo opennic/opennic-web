@@ -15,16 +15,16 @@ main {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 80%;
+  width: 90%;
 }
 @media #{$medium-and-up} {
   .container {
-    width: 75%;
+    width: 80%;
   }
 }
 @media #{$large-and-up} {
   .container {
-    width: 60%;
+    width: 70%;
   }
 }
 .no-margin {
@@ -100,3 +100,9 @@ footer.page-footer {
   line-height: 1.5;
   letter-spacing: -0.003em;
  }
+img {
+  max-width: 100%;
+}
+pre {
+    white-space: pre-wrap;
+}
