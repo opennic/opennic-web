@@ -75,11 +75,11 @@ $datepicker-selected-outfocus: desaturate(lighten($secondary-color, 35%), 15%) !
 /*** Global ***/
 // Media Query Ranges
 $small-screen-up: 601px !default;
-$medium-screen-up: 1301px !default;
-$large-screen-up: 1501px !default;
+$medium-screen-up: 1101px !default;
+$large-screen-up: 1301px !default;
 $small-screen: 600px !default;
-$medium-screen: 1300px !default;
-$large-screen: 1500px !default;
+$medium-screen: 1100px !default;
+$large-screen: 1300px !default;
 
 $medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
 $large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
