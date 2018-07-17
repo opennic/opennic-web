@@ -6,6 +6,8 @@ https://opennicproject.org/* https://www.opennic.org/:splat 301!
 https://www.opennicproject.org/* https://www.opennic.org/:splat 301!
 https://opennicproject.com/* https://www.opennic.org/:splat 301!
 https://www.opennicproject.com/* https://www.opennic.org/:splat 301!
+https://opennicproject.net/* https://www.opennic.org/:splat 301!
+https://www.opennicproject.net/* https://www.opennic.org/:splat 301!
 
 # Redirect default Netlify subdomain to primary domain
 https://opennic.netlify.com/* https://www.opennic.org/:splat 301!
