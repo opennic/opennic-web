@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
     also provides access to domains not administered by ICANN.
 baseurl: ""
 url: "https://www.opennic.org"
-include: ["_redirects"]
+include: ["_redirects", ".well-known"]
 paginate: 5
 paginate_path: "/page:num/"
 languages: ["en"]

@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: opennic.org
+Token: 7f87375edcc4960216991056535bb22afe1dbc623bcc85ee095eab16f5bf867e
