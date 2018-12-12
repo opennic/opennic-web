@@ -6,7 +6,7 @@ I hereby claim:
 
   * I am an admin of https://opennic.org
   * I am jonaharagon (https://keybase.io/jonaharagon) on keybase.
-  * I have a public key ASDird0rMUlWf6hEiuVPu5IiGTE0y6q8ZXFbXon5paxJFgo
+  * I have a public key ASBD2KZniUf0KM-4GzlgrMnnJzEg54hDvlsnGRExgP2IfAo
 
 To do so, I am signing this object:
 
@@ -15,37 +15,38 @@ To do so, I am signing this object:
     "key": {
       "eldest_kid": "01014354fcf62ba0752c5ceb6175fbecef4205b22adc102cb9f4963546960039f9c20a",
       "host": "keybase.io",
-      "kid": "0120e2addd2b3149567fa8448ae54fbb9222193134cbaabc65715b5e89f9a5ac49160a",
+      "kid": "012043d8a6678947f428cfb81b3960acc9e7273120e78843be5b2719113180fd887c0a",
       "uid": "3164c4d37d2d2bea011091787d7bc119",
       "username": "jonaharagon"
     },
     "merkle_root": {
-      "ctime": 1520616103,
-      "hash": "9bfa6e45d1178ec326506375584658151ec7b51e211036ac94d58f8bfd723b8c464b8d179d60280e7dba164faa832e75793fd81ada1ef18c8200d328e34a8497",
-      "hash_meta": "0d6270d6ca5d51f432345f6d778d892f1adaf902c12a0628da52f528b1466a9c",
-      "seqno": 2211377
+      "ctime": 1544635387,
+      "hash": "fd98ffb92a43bc72c6d3ece4f8a77deecaa06dd8ba97de317fcb9b4d397d466c3125eefabf86446a22d1d57818dbe5332e245c6d0912158f421f229bc2fcc1f2",
+      "hash_meta": "33c6623f37a02a4e5dc1670fda4c98a145edadd4a1e95dc48ea8c9fc2fadde37",
+      "seqno": 4117109
     },
     "service": {
+      "entropy": "jgH7HYCgkzrYEi9jBbBnsJ8m",
       "hostname": "opennic.org",
       "protocol": "https:"
     },
     "type": "web_service_binding",
-    "version": 1
+    "version": 2
   },
   "client": {
     "name": "keybase.io go client",
-    "version": "1.0.45"
+    "version": "2.11.0"
   },
-  "ctime": 1520616128,
+  "ctime": 1544635402,
   "expire_in": 504576000,
-  "prev": "2e0cd2332f30b19b31f8635ec2ccf8e127523c0f982969d0ebb1d85f0e3e5b08",
-  "seqno": 57,
+  "prev": "9c9ad4805b7cf9914186505ad5dfa6fc8b794dc54c275888592da9103a4af766",
+  "seqno": 147,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg4q3dKzFJVn+oRIrlT7uSIhkxNMuqvGVxW16J+aWsSRYKp3BheWxvYWTFA0d7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxNDM1NGZjZjYyYmEwNzUyYzVjZWI2MTc1ZmJlY2VmNDIwNWIyMmFkYzEwMmNiOWY0OTYzNTQ2OTYwMDM5ZjljMjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZTJhZGRkMmIzMTQ5NTY3ZmE4NDQ4YWU1NGZiYjkyMjIxOTMxMzRjYmFhYmM2NTcxNWI1ZTg5ZjlhNWFjNDkxNjBhIiwidWlkIjoiMzE2NGM0ZDM3ZDJkMmJlYTAxMTA5MTc4N2Q3YmMxMTkiLCJ1c2VybmFtZSI6ImpvbmFoYXJhZ29uIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTIwNjE2MTAzLCJoYXNoIjoiOWJmYTZlNDVkMTE3OGVjMzI2NTA2Mzc1NTg0NjU4MTUxZWM3YjUxZTIxMTAzNmFjOTRkNThmOGJmZDcyM2I4YzQ2NGI4ZDE3OWQ2MDI4MGU3ZGJhMTY0ZmFhODMyZTc1NzkzZmQ4MWFkYTFlZjE4YzgyMDBkMzI4ZTM0YTg0OTciLCJoYXNoX21ldGEiOiIwZDYyNzBkNmNhNWQ1MWY0MzIzNDVmNmQ3NzhkODkyZjFhZGFmOTAyYzEyYTA2MjhkYTUyZjUyOGIxNDY2YTljIiwic2Vxbm8iOjIyMTEzNzd9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoib3Blbm5pYy5vcmciLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC40NSJ9LCJjdGltZSI6MTUyMDYxNjEyOCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiIyZTBjZDIzMzJmMzBiMTliMzFmODYzNWVjMmNjZjhlMTI3NTIzYzBmOTgyOTY5ZDBlYmIxZDg1ZjBlM2U1YjA4Iiwic2Vxbm8iOjU3LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQJxuBzRusglmCRxhG9fmg88dW+T9v8sb4t+Sn+FehQyR6IZ408lhb+W18Sa9BVMKVYWjwzn/qPTm2W6WL5EnNQuoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCAmWWBrOnrCzr3x/wtO/OJOnxxVM6Aq/LmsYl5FEzcnCaN0YWfNAgKndmVyc2lvbgE=
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgQ9imZ4lH9CjPuBs5YKzJ5ycxIOeIQ75bJxkRMYD9iHwKp3BheWxvYWTES5cCzJPEIJya1IBbfPmRQYZQWtXfpvyLeU3FTCdYiFktqRA6SvdmxCDcHw3PM8tqWaOvInMx3jrW7Kas660KkXiXoF5oUEHNJQIBwqNzaWfEQCLal55zATwFHAUAaVQCkStQRXwZUny2CuzZ8lpA7xXjnB5BkHxQ7b8VdEnmIdVWh7uSfyefDDboeg/dnoiWHw2oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCD4WrlPJOH8cJ78Q1APFUWwY9ZcnFw6MqVsksgq/oeVnaN0YWfNAgKndmVyc2lvbgE=
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
