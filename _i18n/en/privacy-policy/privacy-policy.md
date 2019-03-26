@@ -51,6 +51,6 @@ Although most changes are likely to be minor, OpenNIC.org may change its Privacy
 
 ## Contact Us
 
-OpenNIC is a community run effort. Official queries should be addressed to the `discuss` Mailing List, as detailed [on the Wiki](https://wiki.opennic.org/opennic/mailinglist). Informal queries can also be sent to our [IRC](irc.md) channel.
+OpenNIC is a community run effort. Official queries should be addressed to the `discuss` Mailing List, as detailed [on the Wiki](https://wiki.opennic.org/opennic/mailinglist). Informal queries can also be sent to our [IRC](/contact/) channel.
 
 For comments, questions, or issues with this site specifically, or this privacy policy, please [open an issue](https://github.com/opennic/opennic-web/issues) on GitHub.
