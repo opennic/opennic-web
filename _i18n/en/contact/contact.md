@@ -22,18 +22,6 @@ Members of our community have also formed unofficial discussion centers where yo
 
 <div class="row">
   <div class="col s12 m6">
-    <div class="card light-blue darken-1">
-      <div class="card-content white-text">
-        <span class="card-title">talk.geek</span>
-        <p>talk.geek is an unofficial phpBB forum for support and discussion on OpenNIC related topics.</p>
-      </div>
-      <div class="card-action">
-        <a class="blue-text text-lighten-5" href="http://talk.geek">Visit Forum</a>
-        <a class="blue-text text-lighten-5" href="https://talkdotgeek.com">ICANN Mirror</a>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m6">
     <div class="card" style="background-color: #7289da;">
       <div class="card-content white-text">
         <span class="card-title">OpenNIC on Discord</span>
