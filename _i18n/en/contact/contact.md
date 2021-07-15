@@ -1,6 +1,6 @@
 Currently, our only modes of official communication are IRC and the [mailing list](https://wiki.opennic.org/opennic/mailinglist). With an IRC client installed, you can connect with us using the following information:
 
-- Server: chat.freenode.net:6697 (use SSL)
+- Server: irc.libera.chat:6697 (use SSL)
 - Channel: #opennic
 
 ---
