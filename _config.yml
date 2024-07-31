@@ -39,4 +39,4 @@ highlighter: rouge
 gems:
     - jekyll-feed
     - jekyll-paginate
-    - jekyll-multiple-languages-plugin
+    - jekyll-polyglot

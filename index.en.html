@@ -1,0 +1,299 @@
+---
+layout: default
+sitemap:
+    priority: 1.0
+    changefreq: 'daily'
+---
+<style>
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .fa {
+	font-size: 1.25em;
+}
+</style>
+<div class="container">
+    <div class="group-article">
+        <div class="row no-margin">
+            <div class="col s12 center-align">
+                <br /><br />
+                <h2 class="black-text center-align">{{ site.data[site.active_lang].site.title }}</h2>
+                <br />
+            		<h5>Looking for an open and democratic alternative DNS root? Concerned about censorship?</h5>
+                <h5>{{ site.data[site.active_lang].site.title }} might be the solution for you!</h5>
+            		<br />
+            		<a href="https://wiki.opennic.org/start" style="margin: 10px;" class="waves-effect waves-light btn-large z-depth-0 blue">Find Out More</a>
+                <a href="{{ "/projects/" | prepend: site.baseurl }}" style="margin: 10px;" class="waves-effect waves-light btn-large z-depth-0 grey">Discover Sites</a>
+            		<br /><br />
+                <p>Your closest servers: <a href="https://servers.opennic.org/">(view all)</a></p>
+                <div class="row">
+                  <div class="col s12 m6 l5 offset-l1">
+                    <div id="geoip4"></div>
+                  </div>
+                  <div class="col s12 m6 l5">
+                    <div id="geoip6"></div>
+                  </div>
+                </div>
+                <script type="text/javascript">
+              		jQuery( document ).ready( function() {
+              			jQuery.ajax( {
+              				url: 'https://api.opennic.org/geoip/?jsonp&res=4&ipv=4',
+              				method: 'GET',
+              				dataType: 'jsonp',
+              				beforeSend: function() {
+              					jQuery( '#geoip4' ).html( 'Finding the closest IPv4 servers to you...<br />' );
+              				},
+              				success: function( data, status, jqxhr ) {
+              					jQuery( '#geoip4' ).html( '' );
+              					for( ip in data )
+              					{
+              						jQuery( '#geoip4' ).html( jQuery( '#geoip4' ).html() + data[ip].ip + ' (<a href="https://servers.opennicproject.org/edit.php?srv=' + data[ip].host + '">' + data[ip].short + '</a>)<br />' );
+              					}
+              				}
+              			} );
+                    jQuery.ajax( {
+              				url: 'https://api.opennic.org/geoip/?jsonp&res=4&ipv=6',
+              				method: 'GET',
+              				dataType: 'jsonp',
+              				beforeSend: function() {
+              					jQuery( '#geoip6' ).html( 'Finding the closest IPv6 servers to you...<br />' );
+              				},
+              				success: function( data, status, jqxhr ) {
+              					jQuery( '#geoip6' ).html( '' );
+              					for( ip in data )
+              					{
+              						jQuery( '#geoip6' ).html( jQuery( '#geoip6' ).html() + data[ip].ip + ' (<a href="https://servers.opennicproject.org/edit.php?srv=' + data[ip].host + '">' + data[ip].short + '</a>)<br />' );
+              					}
+              				}
+              			} );
+              		} );
+              	</script>
+                <br />
+                <p><a href="{{ "/contact/" | prepend: site.baseurl }}">Want to learn more or chat with us? Click here to get in touch!</a></p>
+                <br />
+            </div>
+        </div>
+            <div class="row">
+
+	      <div class="col s12 m4">
+		<div class="icon-block">
+		    <h2 class="center light-blue-text">
+			<i class="fa fa-users" aria-hidden="true"></i></h2>
+		    <h5 class="center">DNS Neutrality</h5>
+		    <p>No corporation should be able to say what websites are or aren’t available to us. By using our volunteer-provided DNS servers you no longer have to question your ISPs motives,
+          and can rest assured that your connection to the Internet is not being censored by your DNS servers.</p>
+		  </div>
+	      </div>
+	      <div class="col s12 m4">
+		<div class="icon-block">
+		    <h2 class="center light-blue-text">
+          <i class="fa fa-gift" aria-hidden="true"></i></h2>
+		    <h5 class="center">No Cost</h5>
+		    <p>We are a non profit organization and do not charge money for access to our
+          DNS services, including the proposal/request of new TLDs. Free to use, and completely operated by volunteers,
+          so there’s no financial pressure to corrupt our organization. New volunteers welcome!</p>
+		  </div>
+	      </div>
+	      <div class="col s12 m4">
+		<div class="icon-block">
+		    <h2 class="center light-blue-text">
+			     <i class="fa fa-home" aria-hidden="true"></i></h2>
+		    <h5 class="center">Stop DNS Hijacking</h5>
+        <p>Have you ever typed a wrong URL into your browser only to be met with an ISP-owned search page?
+          The domain you tried to visit, ads you click, and the searches you do can all be collected by your ISP for any number of nefarious purposes.
+          You can stop this behavior with OpenNIC servers, which lets DNS work the way it was meant to: in your control.</p>
+		  </div>
+	      </div>
+	    </div>
+    </div>
+</div>
+<br />
+<div class="green">
+	<div class="container">
+    <br /><br />
+		<div class="row">
+			<div class="col s12">
+				<h3 class="white-text center-align thin">New Top-Level Domains!</h3>
+				<p class="white-text center-align">OpenNIC's TLDs grant you access to a whole new space on the web. These domains can only be accessed <b><a href="https://wiki.opennic.org/start" class="white-text">using our democratic nameservers</a></b>. Once you're in, click a button below to register your free domain!</p>
+			</div>
+		</div>
+    <div class="row">
+      <div class="col s4 m3 l2 offset-l1">
+        <a href="https://wiki.opennic.org/opennic:dot:bbs">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.bbs</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="https://www.opennic.chan/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.chan</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://opennic.cyb/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.cyb</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.dyn</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.geek</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2 offset-l1">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.gopher</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.indy</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.libre</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://register.neo/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.neo</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://register.null/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.null</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2 offset-l1">
+        <a href="https://github.com/moderntld/.o">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.o</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.oss</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://opennic.oz/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.oz</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.parody</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s4 m3 l2">
+        <a href="http://be.libre/">
+          <div class="card-panel white z-depth-0">
+            <span class="black-text"><center>.pirate</center></span>
+          </div>
+        </a>
+      </div>
+      <div class="col s1 hide-on-med-and-down">
+        <br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <p class="white-text center-align">Anybody with the right experience can apply to run their own TLD on our network! <b><a class="white-text" href="https://wiki.opennic.org/opennic/creating_new_tlds">Learn More</a></b>.</p>
+      </div>
+    </div>
+  <br /><br />
+	</div>
+</div>
+
+<div class="container">
+  <div class="row no-margin">
+    <div class="col s12">
+      <br /><br />
+      <h3 class="center-align thin">Peered Networks</h3>
+      <p class="center-align">We are peered with many different alternative DNS roots to give you easy access to a multitude of different namespaces, all from one server.</p>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text" style="height: 66px;">
+              <?xml version="1.0" ?><svg enable-background="new 0 0 226.777 226.777" height="66px" id="Layer_1" version="1.1" viewBox="0 0 226.777 226.777" width="66px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M168.53,15.763H56.781L0,113.389l56.781,97.625h112.64l57.567-97.96L168.53,15.763z M157.179,189.625   H69.083l-44.339-76.236l44.339-76.235h87.343l45.679,76.022L157.179,189.625z" fill="#231F20"/><polygon fill="#231F20" points="71.571,88.983 103.655,88.983 103.655,104.34 71.571,104.34 71.571,122.438 121.755,122.438    121.755,88.983 136.7,88.983 136.7,136.011 71.571,136.011 71.571,154.11 154.8,154.11 154.8,70.882 71.571,70.882  "/></g></svg>            </h2>
+            <h5 class="center">Emercoin</h5>
+            <p>We've <a href="https://emercoin.com/2015-01-15-Emercoin_Reaches_Peering_Agreement_with_OpenNIC">partnered with Emercoin</a> to bring you access to the <b>.lib</b>, <b>.coin</b>, <b>.emc</b>, and <b>.bazar</b> TLDs. <br /><a href="https://wiki.opennic.org/opennic:namespaces#peered_top-level_domains">Learn more</a>.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text" style="height: 66px;">
+              <i class="fa fa-flag" aria-hidden="true"></i>
+            </h2>
+            <h5 class="center">New Nations</h5>
+            <p><a href="http://new-nations.net/en/">New Nations</a>' TLDs provide namespaces for emerging countries, accessible anywhere via OpenNIC.<br /><a href="https://wiki.opennic.org/opennic:namespaces#peered_top-level_domains">Learn more</a>.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text" style="height: 66px;">
+              <i class="fa fa-exchange" aria-hidden="true"></i>
+            </h2>
+            <h5 class="center">FurNIC</h5>
+            <p>Providing resolution to any <b>.fur</b> domain through all of our Tier 2 resolvers. <br /><a href="https://wiki.opennic.org/opennic:dot:fur">Learn more</a>.</p>
+          </div>
+        </div>
+      </div>
+      <p class="center-align">Everything is accessible through our <a href="https://servers.opennic.org/">global network of DNS resolvers</a>. If you operate an alternative DNS root, <a href="https://wiki.opennic.org/help"> get in touch</a>!</p>
+      <br /><br /><br />
+    </div>
+  </div>
+</div>
+
+<div class="blue">
+  <div class="container white-text">
+  	<div class="row no-margin">
+  		<div class="col s12">
+        <br /><br />
+  			<h3 class="center-align thin">Donate</h3>
+  			<p class="center-align">We provide all this completely free of charge! Please, if you are able, consider running a Tier 2 server or make a donation:</p>
+  			<p class="center-align">BTC: <span class="cryptoaddress">1yM2wmPrRLSXkatn5oFLjhpXzTwDvNCpp</span><br />
+                                ETH: <span class="cryptoaddress">0x8111dc2100a2aCA8138c49B4A10766eF481530a6</span><br />
+			        XMR: <span class="cryptoaddress">45ddJYG1m6g21pJabJS5dvJDe8mW5obu9QreK7dxAMgJCGNP1A3J6Cub8zGic9pKbjXcwSghzFTr4RmGta5xVhsHNtZpJAK</span></p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <p style="text-align: center;"><input name="cmd" type="hidden" value="_s-xclick"></p>
+            <p style="text-align: center;"><input name="hosted_button_id" type="hidden" value="QZLYC9T3E55KW"></p>
+            <p style="text-align: center;"><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="/assets/images/paypal_btn.gif" type="image"></p>
+        </form>
+  			<p class="center-align">We appreciate any and all donations, no matter the size!</p>
+        <br /><br /><br />
+  		</div>
+  	</div>
+  </div>
+</div>

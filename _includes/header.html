@@ -1,23 +1,23 @@
 <div class="navbar-fixed">
 <nav class="grey darken-4 {{ site.color.navbar }}-text z-depth-0">
     <ul id="slide-out" class="side-nav">
-        <li><a href="{{ site.baseurl }}/" class="black-text">{% t title.home %}</a></li>
-        <li><a href="https://wiki.opennic.org/" class="black-text">{% t title.wiki %}</a></li>
+        <li><a href="{{ site.baseurl }}/" class="black-text">{{ site.data[site.active_lang].title.home }}</a></li>
+        <li><a href="https://wiki.opennic.org/" class="black-text">{{ site.data[site.active_lang].title.wiki }}</a></li>
         <li><a href="{{ "/projects/" | prepend: site.baseurl }}" class="black-text">Projects</a></li>
-        <li><a href="{{ "/contact/" | prepend: site.baseurl }}" class="black-text">{% t title.contact %}</a></li>
-        <li><a href="https://servers.opennic.org/" class="black-text">{% t title.servers %}</a></li>
-        <li><a href="{{ "/announcements/" | prepend: site.baseurl }}" class="black-text">{% t title.announcements %}</a></li>
-        <li><a href="https://members.opennicproject.org/" class="black-text">{% t title.members %}</a></li>
+        <li><a href="{{ "/contact/" | prepend: site.baseurl }}" class="black-text">{{ site.data[site.active_lang].title.contact }}</a></li>
+        <li><a href="https://servers.opennic.org/" class="black-text">{{ site.data[site.active_lang].title.servers }}</a></li>
+        <li><a href="{{ "/announcements/" | prepend: site.baseurl }}" class="black-text">{{ site.data[site.active_lang].title.announcements }}</a></li>
+        <li><a href="https://members.opennicproject.org/" class="black-text">{{ site.data[site.active_lang].title.members }}</a></li>
     </ul>
     <div class="container container-large">
-    <a class="brand-logo" href="{{ site.baseurl }}/" class="{{ site.color.navbar }}-text"><span class="light {{ site.color.navbar }}-text"><b>{% t site.title %}</b> {% t site.site %}</span></a>
+    <a class="brand-logo" href="{{ site.baseurl }}/" class="{{ site.color.navbar }}-text"><span class="light {{ site.color.navbar }}-text"><b>{{ site.data[site.active_lang].site.title }}</b> {{ site.data[site.active_lang].site.site }}</span></a>
     <ul class="right hide-on-med-and-down">
-        <li><a href="https://wiki.opennic.org/" class="{{ site.color.navbar }}-text">{% t title.wiki %}</a></li>
+        <li><a href="https://wiki.opennic.org/" class="{{ site.color.navbar }}-text">{{ site.data[site.active_lang].title.wiki }}</a></li>
         <li><a href="{{ "/projects/" | prepend: site.baseurl }}" class="{{ site.color.navbar }}-text">Projects</a></li>
-        <li><a href="{{ "/contact/" | prepend: site.baseurl }}" class="{{ site.color.navbar }}-text">{% t title.contact %}</a></li>
-        <li><a href="https://servers.opennic.org/" class="{{ site.color.navbar }}-text">{% t title.servers %}</a></li>
-        <li><a href="{{ "/announcements/" | prepend: site.baseurl }}" class="{{ site.color.navbar }}-text">{% t title.announcements %}</a></li>
-        <li><a href="https://members.opennicproject.org/" class="{{ site.color.navbar }}-text">{% t title.members %}</a></li>
+        <li><a href="{{ "/contact/" | prepend: site.baseurl }}" class="{{ site.color.navbar }}-text">{{ site.data[site.active_lang].title.contact }}</a></li>
+        <li><a href="https://servers.opennic.org/" class="{{ site.color.navbar }}-text">{{ site.data[site.active_lang].title.servers }}</a></li>
+        <li><a href="{{ "/announcements/" | prepend: site.baseurl }}" class="{{ site.color.navbar }}-text">{{ site.data[site.active_lang].title.announcements }}</a></li>
+        <li><a href="https://members.opennicproject.org/" class="{{ site.color.navbar }}-text">{{ site.data[site.active_lang].title.members }}</a></li>
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse right {{ site.color.navbar }}-text"><i class="fa fa-bars" aria-hidden="true"></i></h2></a>
     </div>
